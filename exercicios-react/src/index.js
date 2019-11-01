@@ -1,14 +1,64 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import PrimeiroComponente from './componentes/PrimeiroComponente'
+// import PrimeiroComponente from './componentes/PrimeiroComponente'
+// import CompA, {CompB as B} from './componentes/DoisComponentes'
+// import MultiElementos from './componentes/MultiElementos'
+// import FamiliaPereira from './componentes/FamiliaPereira'
+import Familia from './componentes/Familia'
+import Membro from './componentes/Membro'
 
 const elemento = document.getElementById('root')
 
 ReactDOM.render(
     <div>
-        <PrimeiroComponente></PrimeiroComponente>
+       <Familia sobrenome="Pereira">
+           <Membro nome="Maria" />
+           {/* <Membro nome="Joana" sobrenome="Pereira" /> */}
+       </Familia>
+       {/* <Familia>
+           <Membro nome="Carol" sobrenome="Costa" />
+           <Membro nome="Renata" sobrenome="Costa" />
+       </Familia> */}
+       {/* <FamiliaPereira /> */}
+       {/* <FamiliaPereira sobrenome="Pereira Costa" /> */}
     </div>
 , elemento)
+
+// ReactDOM.render(
+//     <div>
+//        <FamiliaPereira />
+//     </div>
+// , elemento)
+
+// ReactDOM.render(
+//     <div>
+//        <MultiElementos />
+//     </div>
+// , elemento)
+
+// ReactDOM.render(
+//     <div>
+//         <CompA valor = "Olá eu sou A!" />
+//         <B valor = "B na área!" />
+//     </div>
+// , elemento)
+
+// ReactDOM.render(
+
+//     <div>
+//         <PrimeiroComponente valor="Bom dia!" />
+//     </div>
+
+//    <div>
+//        <PrimeiroComponente valor="Bom dia!" aBcD={Math.pow(2, 8)} />
+//    </div>
+// , elemento)
+
+// ReactDOM.render(
+//     <div>
+//         <PrimeiroComponente></PrimeiroComponente>
+//     </div>
+// , elemento)
 
 // const jsx = <h1>Olá React!</h1>
 // ReactDOM.render(jsx, elemento)
