@@ -4,17 +4,29 @@ import ReactDOM from 'react-dom'
 // import CompA, {CompB as B} from './componentes/DoisComponentes'
 // import MultiElementos from './componentes/MultiElementos'
 // import FamiliaPereira from './componentes/FamiliaPereira'
-import Familia from './componentes/Familia'
-import Membro from './componentes/Membro'
+// import Familia from './componentes/Familia'
+// import Membro from './componentes/Membro'
+// import ComponenteComFuncao from './componentes/ComponenteComFuncao'
+// import Pai from './componentes/Pai'
+/* import ComponenteClasse from './componentes/ComponenteClasse' */
+/* import Contador from './componentes/Contador' */
+import Hook from './componentes/Hook'
 
 const elemento = document.getElementById('root')
 
 ReactDOM.render(
     <div>
-       <Familia sobrenome="Pereira">
+
+        <Hook />
+
+       {/* <Contador numeroInicial={100} /> */}
+       {/* <ComponenteClasse valor="Sou um componente de classe!" /> */}
+       {/*  <Pai /> */}
+       {/*  <ComponenteComFuncao /> */}
+       {/* <Familia sobrenome="Pereira">
            <Membro nome="Maria" />
-           {/* <Membro nome="Joana" sobrenome="Pereira" /> */}
-       </Familia>
+           {/* <Membro nome="Joana" sobrenome="Pereira" />
+       </Familia> */}
        {/* <Familia>
            <Membro nome="Carol" sobrenome="Costa" />
            <Membro nome="Renata" sobrenome="Costa" />
